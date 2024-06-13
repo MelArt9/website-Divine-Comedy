@@ -1,0 +1,578 @@
+/* Шрифты */
+@font-face {
+  font-family: 'PaladinRus';
+  src: url('fonts/Paladin/PaladinRus.eot');
+  /* IE9+ Compat Modes */
+  src: url('fonts/Paladin/PaladinRus.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/Paladin/PaladinRus.woff2') format('woff2'),
+    /* Super modern browsers */
+    url('fonts/Paladin/PaladinRus.woff') format('woff'),
+    /* Modern browsers */
+    url('fonts/Paladin/PaladinRus.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/Paladin/PaladinRus.svg') format('svg');
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AntikvarShadow-Roman';
+  src: url('fonts/Antikvar/AntikvarShadow-Roman.eot');
+  src: url('fonts/Antikvar/AntikvarShadow-Roman.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Antikvar/AntikvarShadow-Roman.woff2') format('woff2'),
+    url('fonts/Antikvar/AntikvarShadow-Roman.woff') format('woff'),
+    url('fonts/Antikvar/AntikvarShadow-Roman.ttf') format('truetype'),
+    url('fonts/Antikvar/AntikvarShadow-Roman.svg') format('svg');
+}
+
+/* Шапка */
+body {
+  min-width: 1040px;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 24px;
+  color: #404040;
+  background-color: white;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  /* Отменяет float. С правого и левого края обтекание отменено */
+  clear: both;
+}
+
+.page__header {
+  min-height: 500px;
+  padding-top: 35px;
+  background-image: url("header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header__top {
+  margin-bottom: 125px;
+}
+
+.header__logo {
+  float: left;
+  width: 205px;
+  height: 55px;
+}
+
+.header__logo img {
+  width: 180px;
+  height: 162px;
+  margin-left: -100px;
+  margin-top: -30px;
+}
+
+.main__nav {
+  float: left;
+  width: 630px;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.main__nav li {
+  font-family: 'AntikvarShadow-Roman';
+  text-shadow: 1px 1px 1px #000;
+  font-size: 14pt;
+  float: left;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+.main__nav li:last-child {
+  margin-right: 0;
+}
+
+.main__nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.main__nav a:hover {
+  text-decoration: underline;
+}
+
+.main__nav a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.promo h3 {
+  font-size: 49px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  font-family: 'PaladinRus';
+  text-decoration: none;
+  line-height: 55px;
+  text-align: center;
+}
+
+
+/* Второй блок — особенности сайта */
+.features {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-color: #f5e9e0;
+}
+
+.features ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-item {
+  position: relative;
+  float: left;
+  width: 279px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+  border-left: 1px solid #d9d9d9;
+}
+
+.feature-item:first-child {
+  border-left-color: transparent;
+}
+
+.feature-item p {
+  margin: 0;
+  font-family: 'AntikvarShadow-Roman';
+}
+
+.feature-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'PaladinRus';
+  color: #eead77;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+/* Третий блок — жизнь Данте */
+.informative__block {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background-color: #f2f2f2;
+}
+
+.informative__block {
+  position: relative;
+}
+
+.section__title {
+  margin: 0;
+  margin-right: 180px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  text-shadow: 1px 1px 1px #000;
+  font-family: 'PaladinRus';
+  color: #a8280b;
+}
+
+.informative__block dl {
+  width: 820px;
+  margin: 0;
+  padding: 0;
+}
+
+.informative__block dt {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.informative__block dd {
+  position: relative;
+  min-height: 100px;
+  margin: 0;
+  padding-left: 130px;
+}
+
+.informative__block dd+dt {
+  margin-top: 70px;
+}
+
+.informative__block dd img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.informative__block dd p {
+  margin: 0;
+  font-family: 'AntikvarShadow-Roman';
+}
+
+.reference__title {
+  display: inline;
+  font-size: 24px;
+  font-family: 'PaladinRus';
+}
+
+.reference__source {
+  color: #666666;
+  font-style: italic;
+  font-family: 'AntikvarShadow-Roman';
+}
+
+.reference__source a {
+  position: relative;
+  color: #a38b70;
+}
+
+.reference__source a:hover {
+  color: #8d745a;
+}
+
+.reference__source a:active {
+  color: rgba(141, 116, 90, 0.3);
+}
+
+.reference__source a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 8px;
+  height: 8px;
+}
+
+
+/* Четвертый блок — слайдер */
+.about__the__book {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background-color: #f5e9e0;
+}
+
+.about__the__book {
+  position: relative;
+}
+
+.about__the__book dl {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.about__the__book dd {
+  position: relative;
+  margin: 0;
+  padding-left: 130px;
+}
+
+.about__the__book dd img {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: 51%;
+  height: 103%;
+  border-radius: 10px;
+}
+
+.about__the__book p {
+  font-family: 'AntikvarShadow-Roman';
+  margin-left: 57%;
+  margin-right: -15%;
+  margin-top: -40%;
+  text-align: justify;
+}
+
+.container_slider {
+  width: 500px;
+  height: 300px;
+}
+
+.photo_slider {
+  position: absolute;
+  animation: round 30s infinite;
+  opacity: 0;
+  max-width: 100%;
+}
+
+/* Автоматически меняет картинки по кругу*/
+@keyframes round {
+  25% {
+    opacity: 1
+  }
+
+  40% {
+    opacity: 0
+  }
+}
+
+img:nth-child(1) {
+  animation-delay: 25s;
+}
+
+img:nth-child(2) {
+  animation-delay: 21s;
+}
+
+img:nth-child(3) {
+  animation-delay: 17s;
+}
+
+img:nth-child(4) {
+  animation-delay: 13s;
+}
+
+img:nth-child(5) {
+  animation-delay: 9s;
+}
+
+img:nth-child(6) {
+  animation-delay: 5s;
+}
+
+img:nth-child(7) {
+  animation-delay: 1s;
+}
+
+
+/* Пятый блок — кантики */
+.parts__book {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: #f2f2f2;
+}
+
+.parts__book {
+  position: relative;
+}
+
+.to-catalog {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.catalog-item {
+  position: relative;
+  float: left;
+  width: 25%;
+  margin-right: 48px;
+  padding: 15px 22px;
+  padding-top: 221px;
+  border: 0;
+}
+
+.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 420px;
+  border-radius: 20px;
+}
+
+.catalog-item h2 {
+  font-family: 'PaladinRus';
+  text-align: center;
+  margin-top: 220px;
+  margin-left: -20px;
+}
+
+.catalog-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.catalog-item a:hover {
+  text-decoration: underline;
+}
+
+
+/* Футор */
+.page__footer {
+  color: #c3c3c3;
+  background-color: #363636;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__middle {
+  margin-bottom: 10px;
+}
+
+.footer__bottom {
+  border-top: 1px solid #5e5e5e;
+}
+
+.footer__menu {
+  float: left;
+  width: 172px;
+  margin-right: 40px;
+}
+
+.footer__menu h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'PaladinRus';
+  color: #a8280b;
+}
+
+.footer__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__menu li {
+  margin-bottom: 15px;
+  font-family: 'AntikvarShadow-Roman';
+}
+
+.footer__menu a {
+  color: #c3c3c3;
+  text-decoration: none;
+}
+
+.footer__menu a:hover {
+  color: #ffffff;
+}
+
+.footer__menu a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__bottom {
+  padding-top: 30px;
+}
+
+.footer__social {
+  float: left;
+  width: 30%;
+  font-size: 0;
+}
+
+.footer__copyright {
+  float: right;
+  width: 28%;
+  margin-top: 17px;
+  color: #ffffff;
+  text-transform: normal;
+  font-family: 'PaladinRus';
+  font-size: 25px;
+}
+
+.footer__copyright .heart {
+  display: inline-block;
+  width: 27px;
+  height: 24px;
+  font-size: 0;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: -5px -419px;
+}
+
+.footer__copyright a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__copyright a:hover {
+  text-decoration: underline;
+}
+
+.sm a {
+  margin: 0 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 24px;
+  overflow: hidden;
+  font-size: 28px;
+  transition: .3s linear;
+  position: relative;
+}
+
+.sm a:hover {
+  transform: scale(1.3);
+  border-radius: 50%;
+}
+
+.sm a i::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-size: 200% 200%;
+  background-position: 75% 75%;
+  top: -10px;
+  left: 0;
+  line-height: 80px;
+  /* фон простирается под полем содержимого */
+  -webkit-background-clip: text;
+  /* Прозрачный текст */
+  -webkit-text-fill-color: transparent;
+  transition: .5s linear;
+}
+
+.sm a:hover i::before {
+  background-position: 0% 0%;
+}
+
+.fa-facebook-f::before {
+  background-image: linear-gradient(135deg, #3b5998 30%, #0a3d62 50%);
+}
+
+.fa-instagram::before {
+  background-image: linear-gradient(135deg, #c32aa3 30%, #0a3d62 50%);
+}
+
+.fa-vk::before {
+  background-image: linear-gradient(135deg, #1da1f2 30%, #0a3d62 50%);
+}
+
+
+/* Кнопка "Вверх" */
+.arrowUp {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  color: #fff;
+  width: 4.5%;
+  height: 9%;
+  background: linear-gradient(113deg, #333333 50%, #e9bc97 50%);
+  background-size: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 50px;
+  transition: .5s;
+}
+
+.arrowUp:hover {
+  background-position: 100% 0;
+}
